@@ -2,20 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <metaHere is the complete code for the "Services" page:
-
-### services.html (Services Page)
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - Certified Food Safety Auditor</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f5f5f5;
+    }
+    .navbar {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #007bff;
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .main-heading {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      color: #333; /* Dark gray color */
+      margin-bottom: 40px;
+    }
+    .service-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #007bff; /* Blue color */
+      margin-bottom: 15px;
+    }
+    .service {
+      background-color: #ffffff; /* White background for better contrast */
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Softer shadow */
+      border: 1px solid #ddd; /* Subtle border */
+    }
+    .service-content {
+      margin-bottom: 0;
+    }
+    .footer {
+      background-color: #e9ecef;
+      padding: 20px 0;
+    }
+    .footer p {
+      margin: 0;
+      font-size: 14px;
+      color: #6c757d;
+    }
+    @media (max-width: 768px) {
+      .main-heading {
+        font-size: 30px;
+      }
+      .service-title {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Food Safety Auditor</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,53 +70,68 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- Main Content -->
   <div class="container mt-5">
-    <h1>Our Services</h1>
+    <h1 class="main-heading">Our Services</h1>
     <div class="row">
       <div class="col-md-6">
-        <h2>Consulting</h2>
-        <p>We provide expert consulting in food safety and quality management with 15 years of industrial experience.</p>
+        <div class="service" style="background-color: #ffcccb;">
+          <h2 class="service-title">Consulting</h2>
+          <p class="service-content">We provide expert consulting in food safety and quality management with 15 years of industrial experience.</p>
+        </div>
       </div>
       <div class="col-md-6">
-        <h2>Regulatory Compliance</h2>
-        <p>Ensuring compliance with international food safety standards including ISO 9001:2015, ISO 22000:2005, FSSC, KOSHER, and HALAL certifications.</p>
-      </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col-md-6">
-        <h2>Training</h2>
-        <p>Providing regular training to employees on food safety implementation and best practices.</p>
-      </div>
-      <div class="col-md-6">
-        <h2>Audits</h2>
-        <p>Conducting supplier qualification programs, second-party audits, and GMP audits to ensure quality and safety.</p>
+        <div class="service" style="background-color: #c2e0c6;">
+          <h2 class="service-title">Regulatory Compliance</h2>
+          <p class="service-content">Ensuring compliance with international food safety standards including ISO 9001:2015, ISO 22000:2005, FSSC, KOSHER, and HALAL certifications.</p>
+        </div>
       </div>
     </div>
     <div class="row mt-4">
       <div class="col-md-6">
-        <h2>Customer Support</h2>
-        <p>Handling customer complaints and providing corrective actions to ensure satisfaction.</p>
+        <div class="service" style="background-color: #fad8be;">
+          <h2 class="service-title">Training</h2>
+          <p class="service-content">Providing regular training to employees on food safety implementation and best practices.</p>
+        </div>
       </div>
       <div class="col-md-6">
-        <h2>Product Improvement</h2>
-        <p>Working on product improvement including shelf life, packaging requirements, quality checks, and storage conditions.</p>
+        <div class="service" style="background-color: #d5e5f0;">
+          <h2 class="service-title">Audits</h2>
+          <p class="service-content">Conducting supplier qualification programs, second-party audits, and GMP audits to ensure quality and safety.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="service" style="background-color: #f5e5f7;">
+          <h2 class="service-title">Customer Support</h2>
+          <p class="service-content">Handling customer complaints and providing corrective actions to ensure satisfaction.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="service" style="background-color: #f0ebeb;">
+          <h2 class="service-title">Product Improvement</h2>
+          <p class="service-content">Working on product improvement including shelf life, packaging requirements, quality checks, and storage conditions.</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <footer class="bg-light text-center text-lg-start">
-    <div class="container p-4">
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
       <p>&copy; 2024 Certified Food Safety Auditor. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
