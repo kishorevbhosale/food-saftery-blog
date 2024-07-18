@@ -5,57 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certified Food Safety Auditor</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f9f9f9;
+    }
+
+    .banner {
+      background-color: #f0acbd; /* Teal background */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(99, 15, 15, 0.1);
+      margin: 20px 0;
+      text-align: center;
+      position: relative;
+      color: #fff;
+    }
+
+    .banner h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #ffeb3b; /* Light golden color */
+      background: linear-gradient(90deg, #ffeb3b, #ffd54f); /* Gradient for glossy effect */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .banner p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    .highlight-section {
+      background-color: #e0f7fa; /* Light cyan background */
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      text-align: center;
+      border: 1px solid #b2ebf2; /* Subtle border */
+    }
+
+    .highlight-section h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #00796b; /* Teal color */
+      margin-bottom: 20px;
+    }
+
+    .highlight-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #004d40; /* Darker teal */
+    }
+
+    .btn-custom {
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 25px;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .btn-custom:hover {
+      background-color: #004d40;
+      color: #fff;
+    }
+
+    .carousel-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .carousel-inner {
+      display: flex;
+    }
+
+    .carousel-item {
+      flex: 0 0 50%; /* Show 2 images at a time */
+      max-width: 50%;
+    }
+
+    .carousel-inner img {
+      width: 100%; /* Ensures image covers the width of the carousel item */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover; /* Ensure the image covers the area */
+      border-radius: 15px;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-color: #00796b; /* Teal background for icons */
+      border-radius: 50%;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+      width: 5%;
+    }
+  </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Food Safety Auditor</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
 
-  <div class="jumbotron text-center">
-    <h1 class="display-4">Certified Food Safety Auditor</h1>
-    <p class="lead">Providing end-to-end food safety, regulatory compliance, and quality solutions for food businesses.</p>
-    <a class="btn btn-primary btn-lg" href="services.html" role="button">Our Services</a>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h2>Professional Consulting</h2>
-        <img src="img/service1.jpg" class="img-fluid" alt="Service Image">
-        <p>With 15 years of industrial experience, we provide expert consulting in food safety and quality management.</p>
-      </div>
-      <div class="col-md-4">
-        <h2>Regulatory Compliance</h2>
-        <img src="img/certs.PNG" class="img-fluid" alt="Award Image">
-        <p>We ensure compliance with international food safety standards including ISO, FSSC, KOSHER, and HALAL certifications.</p>
-      </div>
-      <div class="col-md-4">
-        <h2>Training and Audits</h2>
-        <img src="img/training_certs.PNG" class="img-fluid" alt="Achievement Image">
-        <p>Conducting regular training and audits to maintain high standards in food safety and quality.</p>
-        <img src="img/certs_1.PNG" class="img-fluid" alt="Achievement Image">
-        <p>Organic standards in food safety and quality.</p>
-      </div>
+  <div class="container mt-5">
+    <div class="banner">
+      <h1>Ensuring Excellence in Food Safety</h1>
+      <p>Your trusted partner in food safety audits and compliance.</p>
+      <a href="services.html" class="btn btn-custom">Explore Our Services</a>
     </div>
-  </div>
 
-  <footer class="bg-light text-center text-lg-start">
-    <div class="container p-4">
-      <p>&copy; 2024 Certified Food Safety Auditor. All rights reserved.</p>
+    <div class="highlight-section">
+      <h2>🔍 Why Food Safety Matters</h2>
+      <p>
+        In today's world, ensuring the highest standards of food safety is not just a regulatory requirement but a vital commitment to protecting public health. From rigorous inspections to comprehensive audits, our goal is to safeguard your business against potential risks and ensure compliance with the latest industry standards.
+      </p>
+      <p>
+        Discover how our expert services can enhance your operations, minimize risks, and build trust with your customers. Adhering to food safety regulations not only prevents contamination but also promotes a culture of excellence in food handling and quality assurance.
+      </p>
+      <a href="services.html" class="btn btn-custom">Explore Our Services</a>
     </div>
-  </footer>
+</div>
+    
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
