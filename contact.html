@@ -5,9 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Certified Food Safety Auditor</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f5f5f5;
+    }
+    .navbar {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #007bff;
+    }
+    .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: #00796b; /* Teal color */
+    }
+    .main-heading {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      color: #333; /* Dark gray color */
+      margin-bottom: 40px;
+    }
+    .rounded-rect {
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Softer shadow */
+      border: 1px solid #ddd; /* Subtle border */
+    }
+    .rounded-rect h2, .rounded-rect h4 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #007bff; /* Blue color */
+      margin-bottom: 15px;
+    }
+    .highlight-section h4 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #cb5c16; /* Orange color */
+      margin-bottom: 20px;
+    }
+    .rounded-rect p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333; /* Dark gray color */
+    }
+    .img-fluid {
+      border: 3px solid #00796b; /* Teal border for photo */
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow */
+    }
+    .footer {
+      background-color: #e9ecef;
+      padding: 20px 0;
+    }
+    .footer p {
+      margin: 0;
+      font-size: 14px;
+      color: #6c757d;
+    }
+    /* Custom colors for each section */
+    .rounded-rect:nth-child(1) {
+      background-color: #ffcccb; /* Light pink */
+    }
+
+    .rounded-rect:nth-child(2) {
+      background-color: #c2e0c6; /* Light green */
+    }
+
+    .rounded-rect:nth-child(3) {
+      background-color: #fad8be; /* Light orange */
+    }
+
+    .rounded-rect:nth-child(4) {
+      background-color: #d5e5f0; /* Light blue */
+    }
+
+    @media (max-width: 768px) {
+      .main-heading {
+        font-size: 30px;
+      }
+      .rounded-rect h2, .rounded-rect h4 {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Food Safety Auditor</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,42 +102,55 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- Main Content -->
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-4">
-        <img src="img/megha.PNG" class="img-fluid rounded-circle mb-3" alt="Your Photo">
-        <h4>Megha Vishwas Ghatge</h4>
-        <p>Thane city, Maharashtra, India</p>
-      </div>
       <div class="col-md-8">
-        <h2>🌟 Ensuring Safety, Inspiring Trust 🌟</h2>
-        <p>At Aaradhyas's Food Safety Audits, we prioritize your health and well-being above all else. With years of expertise in food safety standards and regulations, we guarantee meticulous inspections and comprehensive audits tailored to your specific needs.
-        </p>
-        <p>🔍 Whether you're a restaurant, food manufacturer, or caterer, our audits are designed to enhance your operations, minimize risks, and ensure compliance with the highest industry standards. We leave no stone unturned in safeguarding your reputation and protecting your customers.</p>
-        <p>💬 Contact us today to schedule your next audit and experience the peace of mind that comes with partnering with a trusted food safety expert. Your success is our commitment!
-        </p>
-        <p>Let's work together to maintain excellence in food safety!</p>
-        <p>Feel free to reach out to me for any inquiries or further information.</p>
-        <p>📞 [+919594271354] 📧 [meghaghatge@gmail.com]</p>
+        <div class="rounded-rect">
+          <h2>🌟 Ensuring Safety, Inspiring Trust 🌟</h2>
+          <p>At Aaradhyas's Food Safety Audits, we prioritize your health and well-being above all else. With years of expertise in food safety standards and regulations, we guarantee meticulous inspections and comprehensive audits tailored to your specific needs.</p>
+        </div>
+        <div class="rounded-rect">
+          <p>🔍 Whether you're a restaurant, food manufacturer, or caterer, our audits are designed to enhance your operations, minimize risks, and ensure compliance with the highest industry standards. We leave no stone unturned in safeguarding your reputation and protecting your customers.</p>
+        </div>
+        <div class="rounded-rect">
+          <p>💬 Contact us today to schedule your next audit and experience the peace of mind that comes with partnering with a trusted food safety expert. Your success is our commitment!</p>
+        </div>
+        <div class="rounded-rect">
+          <p>Let's work together to maintain excellence in food safety!</p>
+          <p>Feel free to reach out to me for any inquiries or further information.</p>
+          <p>📞 [+919594271354] 📧 [meghaghatge@gmail.com]</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <!-- Placeholder for your photo -->
+        <img src="img/megha.PNG" class="img-fluid mb-3" alt="Your Photo">
+        <div class="rounded-rect">
+          <h4>Megha Vishwas Ghatge</h4>
+          <p>Food Safety and Quality Manager</p>
+          <p>Thane city, Maharashtra, India</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <footer class="bg-light text-center text-lg-start">
-    <div class="container p-4">
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
       <p>&copy; 2024 Certified Food Safety Auditor. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
