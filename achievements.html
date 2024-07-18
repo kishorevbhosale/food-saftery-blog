@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements | My Company</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .card {
+            border: none; /* Remove default border */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        .card img {
+            max-width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Maintain aspect ratio and cover the area */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .achievement-item {
+            margin-bottom: 20px;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px; /* Space between images */
+        }
+        .image-gallery .card {
+            flex: 1;
+            min-width: calc(50% - 15px); /* Two images side by side with a gap */
+        }
+        @media (max-width: 768px) {
+            .image-gallery .card {
+                min-width: 100%; /* Stack images on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Food Safety Auditor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="achievements.html">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Certifications Section -->
+        <div class="achievement-item">
+            <h2 class="section-title">Certifications</h2>
+            <div class="image-gallery">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/certs.PNG" alt="Certification Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Licenses Section -->
+        <!--<div class="achievement-item">
+            <h2 class="section-title">Licenses</h2>
+            <div class="image-gallery">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="license.png" alt="License Image">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Trainings Completed Section -->
+        <div class="achievement-item">
+            <h2 class="section-title">Trainings Completed</h2>
+            <div class="image-gallery">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/training_certs.PNG" alt="Training Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Awards Section -->
+        <div class="achievement-item">
+            <h2 class="section-title">Awards</h2>
+            <div class="image-gallery">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/certs_1.PNG" alt="Award Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
